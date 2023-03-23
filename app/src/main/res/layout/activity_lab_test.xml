@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LabTestActivity">
+
+    <TextView
+        android:id="@+id/DetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/audiowide"
+        android:text="MEDIMINE"
+        android:textColor="@color/purple_700"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/baloo_bhai"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text=" Go To Cart"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@color/colorbluepatch"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <TextView
+        android:id="@+id/DetailTitle2"
+        android:layout_width="43dp"
+        android:layout_height="98dp"
+
+
+        android:layout_alignStart="@+id/DetailTitle"
+        android:layout_alignLeft="@+id/DetailTitle"
+        android:layout_alignEnd="@+id/DetailTitle"
+        android:layout_alignRight="@+id/DetailTitle"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="+"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <TextView
+        android:id="@+id/DetailTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Hospital"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/DetailTitle56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Lab tests"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <ListView
+        android:id="@+id/ListViewCC"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_margin="20dp"
+
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetailTitle56" />
+</android.support.constraint.ConstraintLayout>
